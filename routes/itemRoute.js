@@ -23,7 +23,7 @@ router.route("/")
 
     .post((req, res) => {
         const currentList = readList();
-        const {title, priority, dueDate} = req.body;
+        const {title, priority, dueDate, isFun} = req.body;
         if (!title || !priority || !dueDate) {
             return res.status(400);
         }
@@ -32,7 +32,8 @@ router.route("/")
             id: uuid(),
             title: title,
             priority: priority,
-            dueDate: dueDate
+            dueDate: dueDate,
+            isFun: isFun
         }
         currentList.push(newListItem);
         writeList(currentList);
@@ -40,16 +41,12 @@ router.route("/")
     })
 
 router.route("/:id")
-    .get((req, res) => {
-
-    })
-
-    .put((req, res) => {
-
-    })
-
     .delete((req, res) => {
-        req.params
+        const taskId = req.params.id;
+        const currentList = readList();
+        const newList = currentList.filter(el => currentList.id !== taskId);
+        writeList(newList);
+        res.status(200).send();
     })
-
+    
 module.exports = router;
