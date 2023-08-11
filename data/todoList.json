@@ -1,0 +1,53 @@
+[
+    {
+        "title": "Complete Project Proposal",
+        "priority": "High",
+        "dueDate": "2023-08-15"
+    },
+    {
+        "title": "Buy Groceries",
+        "priority": "Medium",
+        "dueDate": "2023-08-12"
+    },
+    {
+        "title": "Call John",
+        "priority": "Low",
+        "dueDate": "2023-08-11"
+    },
+    {
+        "title": "Finish Reading Book",
+        "priority": "Medium",
+        "dueDate": "2023-08-20"
+    },
+    {
+        "title": "Write Report for Meeting",
+        "priority": "High",
+        "dueDate": "2023-08-18"
+    },
+    {
+        "title": "Prepare Presentation",
+        "priority": "Medium",
+        "dueDate": "2023-08-17"
+    },
+    {
+        "title": "Clean the House",
+        "priority": "Low",
+        "dueDate": "2023-08-16"
+    },
+    {
+        "title": "Send Birthday Gift",
+        "priority": "Medium",
+        "dueDate": "2023-08-25"
+    },
+    {
+        "title": "Update Resume",
+        "priority": "High",
+        "dueDate": "2023-08-19"
+    },
+    {
+        "id": "a71d9b74-df52-4eaa-a896-917db71f0eac",
+        "title": "Finish Pair Programming",
+        "priority": "High",
+        "dueDate": "2023-08-11"
+    }
+]
