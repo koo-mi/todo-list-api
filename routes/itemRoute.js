@@ -44,9 +44,9 @@ router.route("/:id")
     .delete((req, res) => {
         const taskId = req.params.id;
         const currentList = readList();
-        const newList = currentList.filter(el => currentList.id !== taskId);
+        const newList = currentList.filter( (el) => el.id !== taskId);
         writeList(newList);
         res.status(200).send();
     })
-    
+
 module.exports = router;
